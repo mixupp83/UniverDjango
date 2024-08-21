@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ pagename }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ pagename }}</h1>
+        <nav>
+            <ul>
+                {% block menu %}
+                    <li><a href="{% url 'home' %}">Главная</a></li>
+                    <li><a href="{% url 'shop' %}">Магазин</a></li>
+                    <li><a href="{% url 'cart' %}">Корзина</a></li>
+                {% endblock %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
