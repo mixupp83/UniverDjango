@@ -59,6 +59,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR, 'task2', 'templates'),
             os.path.join(BASE_DIR, 'task3', 'templates'),
             os.path.join(BASE_DIR, 'task4', 'templates'),
+            os.path.join(BASE_DIR, 'task5', 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
